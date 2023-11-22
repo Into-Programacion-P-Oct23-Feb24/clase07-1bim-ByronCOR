@@ -24,7 +24,7 @@ public class Ejemplo061 {
         entrada.useLocale(Locale.US);
         int contador = 0;
         double suma_total = 0;
-        double promedio = 0;
+        double promedio;
         double calificacion;
         boolean bandera = true;
 
@@ -39,19 +39,16 @@ public class Ejemplo061 {
                 calificacion = 20;
             }
             suma_total = suma_total + calificacion;
-            contador= contador+1;
-
             // proceso para salir del ciclo.
             System.out.println("Ingrese el valor -1 para salir del ciclo");
             int temporal = entrada.nextInt();
 
             if (temporal == -1) {
-                bandera = false;  
+                bandera = false;
             }
-            promedio= suma_total/contador;
+            contador = contador + 1;
         }
-
-        System.out.printf("Suma de calificaciones es %.2f\nPromedio :%.2f\n", suma_total,promedio);
-
+        promedio = suma_total / contador;
+        System.out.printf("Suma de calificaciones es %.2f\nPromedio final es :%.2f\n", suma_total, promedio);
     }
 }
