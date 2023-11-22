@@ -25,13 +25,14 @@ public class Ejemplo03 {
         int contador = 1;
         int suma = 0;
         int valor_ingresado;
-        
+        /*Permite al usuario realizar una suma de 5 numeros ingresados por el 
+        usuario diferentes y presentar en pantalla la suma entre esos nuemero*/
         while (contador <= limite) { 
             System.out.println("Ingrese el valor a sumar");
             valor_ingresado = entrada.nextInt();
             suma = suma + valor_ingresado;
             System.out.printf("Valor ingresado %d\n", valor_ingresado);
-            contador = contador + 1;
+           // contador = contador + 1;
         }
 
         System.out.printf("La suma final es %d\n", suma);
